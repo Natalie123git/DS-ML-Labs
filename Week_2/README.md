@@ -98,7 +98,7 @@ myvalues = mydictionary.values()
 mydictionary.update({"gender":"Male"})
 ```
 ### Screenshots of results
-![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%205of6.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%206of6.png)
 
 ### Key Observations / Lessons Learned
 - Dictionaries store **unordered key‑value pairs**.  

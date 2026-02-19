@@ -34,7 +34,8 @@ mycount = colours.count("blue")
 colours.sort()
 colours.reverse()
 ```
-
+### Screenshots of results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%201of6.png)
 ### Key Observations / Lessons Learned
 - Lists are **mutable** (can be changed after creation).  
 - Useful for ordered collections where frequent updates are needed.  

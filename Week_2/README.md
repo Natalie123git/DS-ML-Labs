@@ -1,82 +1,106 @@
-[Duplicate_Week_2_lists, tupples and dictionaries.py](https://github.com/user-attachments/files/25422995/Duplicate_Week_2_lists.tupples.and.dictionaries.py)
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb 19 18:00:26 2026
+# Lab Title: Working with Lists, Tupple and Dictionaries
 
-@author: hp
-"""
+## Objective
+To practice Python’s core data structures — **lists, tuples, and dictionaries** — and understand their properties, mutability, and common operations.
 
-#Lists and their mutability
+## Tools Used
+- Python 
+- Sypder  
+
+
+## Lab 1: Lists and Their Mutability
+
+### Step‑by‑Step Process
+1. Created a list of colours.  
+2. Appended new items.  
+3. Extended the list with multiple items.  
+4. Inserted an item at a specific position.  
+5. Removed and popped items.  
+6. Indexed to find positions.  
+7. Counted occurrences.  
+8. Sorted and reversed the list.
+
+### Commands Executed
+```python
 colours = ["red","green","yellow","blue","purple","orange"]
-colours
-
-#appending
 colours.append("burgundy")
-colours
-
-#extension
 colours.extend(["brown","black","white"])
-colours
-
-#inserting a variable
 colours.insert(1,"pink")
-colours
-
-#removing a variable
 colours.remove("yellow")
-colours
-
-#popping variables at certain positions eg orange at position 5
-pop_variable=colours.pop(5)
+pop_variable = colours.pop(5)
 print(pop_variable)
-colours
-
-#indexing which is to identify the position of a variable in a list
-myindex=colours.index("brown")
-myindex
-
-#count variables in a list
-colours.count("blue")
-#OR
-mycount=colours.count("blue")
-mycount
-
-#sorting: usually done in ascending order
+myindex = colours.index("brown")
+mycount = colours.count("blue")
 colours.sort()
-colours
-
-#reversing
 colours.reverse()
-colours
+```
 
+### Key Observations / Lessons Learned
+- Lists are **mutable** (can be changed after creation).  
+- Useful for ordered collections where frequent updates are needed.  
+- Methods like `append`, `extend`, and `insert` add flexibility.  
+- Sorting and reversing allow quick reorganization of data.  
 
-##Tupples (immutable but can count or index)
+---
+
+## Lab 2: Tuples (Immutable)
+
+### Step‑by‑Step Process
+1. Created a tuple of animals.  
+2. Counted occurrences of an element.  
+3. Found the index of an element.  
+4. Accessed elements by position.  
+
+### Commands Executed
+```python
 animals = ("dog","cat","cow","cat")
-animals
 animals.count("cat")
 animals.index("cow")
 print(animals[2])
+```
+### Screenshots of results
 
 
-##Dictionaries: these are unordered key and value pairs. There are various
-#of creating a dictionary
-mydictionary=dict(Name="Thomas",Age=108,City="Lagos")
-mydictionary
-#OR
-mydictionary=dict([("Name","Thomas"),("Age",108),("City","Lagos")])
-mydictionary
-#OR
-mydictionary={"Name":"Thomas","Age":108,"City":"Lagos"}
-mydictionary
+### Key Observations / Lessons Learned
+- Tuples are **immutable** (cannot be changed after creation).  
+- Still allow counting and indexing operations.  
+- Best used for fixed collections of data.  
 
-#extracting information from dictionaries adding
-age=mydictionary.get("Age")
-age
-myitems=mydictionary.items()
-myitems
-mykeys=mydictionary.keys()
-mykeys
-myvalues=mydictionary.values()
-myvalues
+---
+
+## Lab 3: Dictionaries (Key‑Value Pairs)
+
+### Step‑by‑Step Process
+1. Created dictionaries using different methods.  
+2. Extracted values with '.get()'.  
+3. Retrieved items, keys, and values.  
+4. Updated dictionary with new key‑value pairs.  
+
+### Commands Executed
+```python
+mydictionary = dict(Name="Thomas", Age=108, City="Lagos")
+mydictionary = dict([("Name","Thomas"),("Age",108),("City","Lagos")])
+mydictionary = {"Name":"Thomas","Age":108,"City":"Lagos"}
+
+age = mydictionary.get("Age")
+myitems = mydictionary.items()
+mykeys = mydictionary.keys()
+myvalues = mydictionary.values()
 mydictionary.update({"gender":"Male"})
-mydictionary
+```
+
+### Key Observations / Lessons Learned
+- Dictionaries store **unordered key‑value pairs**.  
+- Multiple ways to create them.  
+- `.get()`, `.items()`, `.keys()`, `.values()` are powerful for data extraction.  
+- Updating is straightforward with `.update()`.  
+
+---
+
+## Overall Reflection
+- Lists taught mutability and dynamic data handling.  
+- Tuples reinforced immutability and stability.  
+- Dictionaries introduced flexible key‑value storage.  
+- These structures form the backbone of Python programming and are essential for data science workflows.  
+
+---

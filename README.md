@@ -4,7 +4,7 @@ Data Science and Machine Learning Laboratory
 # Python Labs Repository
 
 ## Overview
-This repository contains all Python lab exercises completed during the course.  
+This repository contains all Python lab exercises completed during the course with PyroCyber.  
 Each lab is organized into weekly folders with clear documentation, code files, and screenshots.
 
 ## Repository Structure

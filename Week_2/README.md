@@ -1,4 +1,4 @@
-# Lab Title: Working with Lists, Tupple and Dictionaries
+# Lab Title: Working with Lists, Tupples and Dictionaries
 
 ## Objective
 To practice Python’s core data structures — **lists, tuples, and dictionaries** — and understand their properties, mutability, and common operations.
@@ -59,7 +59,7 @@ animals.index("cow")
 print(animals[2])
 ```
 ### Screenshots of results
-
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%201of6.png)
 
 ### Key Observations / Lessons Learned
 - Tuples are **immutable** (cannot be changed after creation).  

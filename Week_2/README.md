@@ -81,7 +81,7 @@ print(animals[2])
 
 ### Step‑by‑Step Process
 1. Created dictionaries using different methods.  
-2. Extracted values with '.get()'.  
+2. Extracted values with ".get()".  
 3. Retrieved items, keys, and values.  
 4. Updated dictionary with new key‑value pairs.  
 

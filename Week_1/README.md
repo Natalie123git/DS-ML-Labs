@@ -55,7 +55,7 @@ print(type(mytuple))
 print(type(myrange))
 ```
 ### Screenshot of Results
-![Project Screenshot]()
+![Project Screenshot](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_1/Week_1_ResultsB.png)
 
 ### Key Observations / Lessons Learned
 - Python supports multiple data types: integers, floats, complex numbers.  

@@ -96,6 +96,6 @@ print(PyroCyber)
 ## Overall Reflection
 - Learned how to assign and print variables.  
 - Explored Python’s fundamental data types.  
-- Practiced dictionary creation and access. `hkj`  
+- Practiced dictionary creation and access.  
 
 ---

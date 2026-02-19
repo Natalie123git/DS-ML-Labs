@@ -1,7 +1,7 @@
-# Lab Title: Working with Lists, Tupples and Dictionaries
+# Lab Title: Working with Lists, Tuples and Dictionaries
 
 ## Objective
-To practice Python’s core data structures — **lists, tuples, and dictionaries** — and understand their properties, mutability, and common operations.
+To practice Python’s core data structures **lists, tuples, and dictionaries** and understand their properties, mutability, and common operations.
 
 ## Tools Used
 - Python 

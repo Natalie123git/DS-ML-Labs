@@ -64,7 +64,7 @@ print(type(myrange))
 
 ---
 
-## Lab 3: Mapping with Dictionaries
+## Mapping with Dictionaries
 
 ### Step‑by‑Step Process
 1. Created a dictionary with key‑value pairs.  

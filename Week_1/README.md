@@ -21,7 +21,7 @@ firstname = "Natalie"
 print(firstname)
 ```
 ### Screenshot of Results
-![Project Screenshot](https://postimg.cc/XBqQTH0t)
+![results](https://i.postimg.cc/90tKwKgX/Week-1-Results-A.png)
 
 ### Key Observations / Lessons Learned
 - Variables store data values.

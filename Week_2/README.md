@@ -35,7 +35,16 @@ colours.sort()
 colours.reverse()
 ```
 ### Screenshots of results
+#### Appending and extending
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%201of6.png)
+#### Inserting and removing
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%202of6.png)
+#### Popping, indexing and counting
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%203of6.png)
+#### Sorting and reversing
+![Result1](
+
+
 ### Key Observations / Lessons Learned
 - Lists are **mutable** (can be changed after creation).  
 - Useful for ordered collections where frequent updates are needed.  
@@ -63,10 +72,7 @@ print(animals[2])
 
 #### Appending and extending
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%201of6.png)
-#### Inserting and removing
-![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%202of6.png)
-#### Popping, indexing and counting
-![Result1](
+
 
 ### Key Observations / Lessons Learned
 - Tuples are **immutable** (cannot be changed after creation).  

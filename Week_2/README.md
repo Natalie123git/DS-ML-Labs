@@ -42,8 +42,7 @@ colours.reverse()
 #### Popping, indexing and counting
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%203of6.png)
 #### Sorting and reversing
-![Result1](
-
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%204of6.png)
 
 ### Key Observations / Lessons Learned
 - Lists are **mutable** (can be changed after creation).  
@@ -69,8 +68,6 @@ animals.index("cow")
 print(animals[2])
 ```
 ### Screenshots of results
-
-#### Appending and extending
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%201of6.png)
 
 

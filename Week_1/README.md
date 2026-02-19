@@ -84,7 +84,7 @@ PyroCyber["Name"]
 print(PyroCyber)
 ```
 ### Screenshot of Results
-![Project Screenshot]()
+![Project Screenshot](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_1/Week_1_ResultsC.png)
 
 ### Key Observations / Lessons Learned
 - Dictionaries store data as **unordered key‑value pairs**.  

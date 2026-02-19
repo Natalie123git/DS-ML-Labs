@@ -21,7 +21,7 @@ firstname = "Natalie"
 print(firstname)
 ```
 ### Screenshot of Results
-![results](https://i.postimg.cc/90tKwKgX/Week-1-Results-A.png)
+![results](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_1/Week_1_ResultsA.png)
 
 ### Key Observations / Lessons Learned
 - Variables store data values.

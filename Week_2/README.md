@@ -60,7 +60,13 @@ animals.index("cow")
 print(animals[2])
 ```
 ### Screenshots of results
+
+#### Appending and extending
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%201of6.png)
+#### Inserting and removing
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_2/Week_2_Results%202of6.png)
+#### Popping, indexing and counting
+![Result1](
 
 ### Key Observations / Lessons Learned
 - Tuples are **immutable** (cannot be changed after creation).  

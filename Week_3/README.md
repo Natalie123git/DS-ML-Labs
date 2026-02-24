@@ -44,7 +44,7 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    j ** k         # Exponential
    ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_3/Week_3_Results_Arithmetic_Operators.png)
 
 2. **Comparison Operators**  
    - Greater than, less than, equal to, not equal to, etc.  
@@ -81,7 +81,7 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    j **= 3
    ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_3/Week_3_Results_Assignment_Operators.png)
 
 5. **Bitwise Operators**  
    - Operate at the binary level (`&`, `|`, `^`, `~`, `<<`, `>>`).  
@@ -142,7 +142,8 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    ```
 
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_3/Week_3_Results_Strings1.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_3/Week_3_Results_Strings2.png)
 
 ---
 

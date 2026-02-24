@@ -57,18 +57,23 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    j != k
    ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_3/Week_3_Results_Comparison_Operators.png)
 
 3. **Logical Operators**  
    - `and`, `or`, `not`.  
    ```python
    j > 57 and k < 78
+   j < 57 and k < 78
    j < 57 or k < 78
+   j < 57 or k > 78
+
+   
    not(j > 57)
+   not(j < 57)
    ```
 
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_3/Week_3_Results_Logical_Operators.png)
 
 4. **Assignment Operators**  
    - Reassign values with `+=`, `-=`, `*=`, `/=`, `//=`, `**=`.  
@@ -88,26 +93,32 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    ```python
    p = 25
    q = 44
-   bin(p), bin(q)
+   bin(p)
+   bin(q)
    p & q
    p | q
    p ^ q
    ~p
    p >> 1
+   p >> 2
+   p >> 3
+   p << 1
    p << 2
    ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_3/Week_3_Results_Bitwise_Operators.png)
 
 6. **Membership Operators**  
    - Check if an element is in a list.  
    ```python
    letters = ["f","h","r","y","s"]
    "h" in letters
+   "b" in letters
    "b" not in letters
+   "h" not in letters
    ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_3/Week_3_Results_Membership_Operators.png)
 
 7. **Identity Operators**  
    - Compare object identities.  
@@ -118,7 +129,7 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    d is not e
    ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_3/Week_3_Results_Identity_Operators.png)
 
 8. **Strings**  
    - Case conversion, checks (`isalpha`, `isdigit`, `isupper`, `islower`), splitting, joining, replacing, startswith/endswith.  
@@ -132,13 +143,16 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    Lesson.islower()
 
    Running = "I hate running"
-   Running.split(" ")
+   Split = Running.split(" ")
    "_".join(Running.split(" "))
+   Running = "I hate running"
    Running.replace("running", "treadmills")
 
    Sports = "marathon"
    Sports.startswith("m")
+   Sports.startswith("r")
    Sports.endswith("n")
+   Sports.endswith("h")
    ```
 
 ### Screenshots of Results

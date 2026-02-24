@@ -13,6 +13,23 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
 ---
 
 ## Step‑by‑Step Process
+
+1. Declared integer variables and performed **addition, subtraction, multiplication, division, floor division, modulo, and exponentiation**.  
+2. Applied **comparison operators** (`>`, `<`, `==`, `!=`, `>=`, `<=`) to evaluate conditions.  
+3. Practiced **logical operators** (`and`, `or`, `not`) to combine or negate conditions.  
+4. Used **assignment operators** (`+=`, `-=`, `*=`, `/=`, `//=`, `**=`) to reassign values dynamically.  
+5. Explored **bitwise operators** (`&`, `|`, `^`, `~`, `<<`, `>>`) to manipulate integers at the binary level.  
+6. Checked **membership operators** (`in`, `not in`) to verify elements within lists.  
+7. Compared objects with **identity operators** (`is`, `is not`) to test storage references.  
+8. Manipulated **strings** with methods like `upper()`, `lower()`, `isalpha()`, `isdigit()`, `isupper()`, `islower()`.  
+9. Practiced **splitting and joining strings** using `split()` and `join()`.  
+10. Replaced substrings with `replace()` to modify text dynamically.  
+11. Verified prefixes and suffixes with `startswith()` and `endswith()`.  
+
+---
+
+## Commands Executed
+
 1. **Arithmetic Operators**  
    - Addition, subtraction, multiplication, division, floor division, modulo, exponentiation.  
    ```python
@@ -26,6 +43,8 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    j % k          # Modulo
    j ** k         # Exponential
    ```
+   
+## Commands Executed
 
 2. **Comparison Operators**  
    - Greater than, less than, equal to, not equal to, etc.  
@@ -37,6 +56,7 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    j <= k
    j != k
    ```
+## Commands Executed
 
 3. **Logical Operators**  
    - `and`, `or`, `not`.  
@@ -45,6 +65,7 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    j < 57 or k < 78
    not(j > 57)
    ```
+## Commands Executed
 
 4. **Assignment Operators**  
    - Reassign values with `+=`, `-=`, `*=`, `/=`, `//=`, `**=`.  
@@ -56,6 +77,7 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    j //= 4
    j **= 3
    ```
+## Commands Executed
 
 5. **Bitwise Operators**  
    - Operate at the binary level (`&`, `|`, `^`, `~`, `<<`, `>>`).  
@@ -70,6 +92,7 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    p >> 1
    p << 2
    ```
+## Commands Executed
 
 6. **Membership Operators**  
    - Check if an element is in a list.  
@@ -78,6 +101,7 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    "h" in letters
    "b" not in letters
    ```
+## Commands Executed
 
 7. **Identity Operators**  
    - Compare object identities.  
@@ -87,6 +111,7 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    d is e
    d is not e
    ```
+## Commands Executed
 
 8. **Strings**  
    - Case conversion, checks (`isalpha`, `isdigit`, `isupper`, `islower`), splitting, joining, replacing, startswith/endswith.  

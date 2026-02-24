@@ -1,4 +1,4 @@
-# Week 3 Labs: Arithmentic, Python Operators and Strings
+# Arithmentic, Python Operators and Strings
 
 ## Objective
 This week focused on arithmetic, comparison, logical, assignment, bitwise, membership, identity operators, and string manipulation.
@@ -43,8 +43,8 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    j % k          # Modulo
    j ** k         # Exponential
    ```
-   
-## Commands Executed
+### Screenshots of Results
+![Result1]()
 
 2. **Comparison Operators**  
    - Greater than, less than, equal to, not equal to, etc.  
@@ -56,7 +56,8 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    j <= k
    j != k
    ```
-## Commands Executed
+### Screenshots of Results
+![Result1]()
 
 3. **Logical Operators**  
    - `and`, `or`, `not`.  
@@ -65,7 +66,9 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    j < 57 or k < 78
    not(j > 57)
    ```
-## Commands Executed
+
+### Screenshots of Results
+![Result1]()
 
 4. **Assignment Operators**  
    - Reassign values with `+=`, `-=`, `*=`, `/=`, `//=`, `**=`.  
@@ -77,7 +80,8 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    j //= 4
    j **= 3
    ```
-## Commands Executed
+### Screenshots of Results
+![Result1]()
 
 5. **Bitwise Operators**  
    - Operate at the binary level (`&`, `|`, `^`, `~`, `<<`, `>>`).  
@@ -92,7 +96,8 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    p >> 1
    p << 2
    ```
-## Commands Executed
+### Screenshots of Results
+![Result1]()
 
 6. **Membership Operators**  
    - Check if an element is in a list.  
@@ -101,7 +106,8 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    "h" in letters
    "b" not in letters
    ```
-## Commands Executed
+### Screenshots of Results
+![Result1]()
 
 7. **Identity Operators**  
    - Compare object identities.  
@@ -111,7 +117,8 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    d is e
    d is not e
    ```
-## Commands Executed
+### Screenshots of Results
+![Result1]()
 
 8. **Strings**  
    - Case conversion, checks (`isalpha`, `isdigit`, `isupper`, `islower`), splitting, joining, replacing, startswith/endswith.  
@@ -134,18 +141,15 @@ This week focused on arithmetic, comparison, logical, assignment, bitwise, membe
    Sports.endswith("n")
    ```
 
----
-
-## Screenshots of Results
-
+### Screenshots of Results
+![Result1]()
 
 ---
 
-## Key Observations / Lessons Learned
+## Key Observations and Lessons Learned
 - Arithmetic, comparison, logical, and assignment operators form the foundation of Python programming.  
 - Bitwise operators allow manipulation at the binary level, useful for low‑level tasks.  
-- Membership and identity operators highlight differences between values and object references.  
+- Membership and identity operators enable us to detect the components of sets.  
 - String methods (`upper`, `lower`, `split`, `join`, `replace`) provide powerful text manipulation tools.  
-- Professional documentation in Markdown makes labs reproducible and clear.  
 
 ---

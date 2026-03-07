@@ -34,6 +34,10 @@ The goal of this lab is to reinforce practical Python programming skills, in str
 ---
 
 ### 1. String Formatting
+- Concatenation with `+` and `str()`
+- F‑strings for concise formatting
+- `.format()` method with positional and named placeholders
+
 ```python
 name = "Natalie"
 age = 99
@@ -50,10 +54,16 @@ print("Hello, my name is {0} and I am {1} years old.".format(name,age))
 print("Hello, my name is {name1} and I am {age1} years old.".format(name1 = name,age1 = age))
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_4/Week_4_Results_String_formatting.png)
 ---
 
 ### 2. Control Flow
+- Simple `if` conditions
+- `if-else` for branching
+- Nested `if` for multiple levels
+- `if-elif-else` for sequential conditions
+- Ternary operators for concise conditional expressions
+
 ```python
 k = 16
 if k>0 and k % 2 == 0:
@@ -113,10 +123,15 @@ result2 = "Even" if number2 % 2 == 0 else "Odd"
 print(result2)
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_4/Week_4_Results_Control_Flow1.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_4/Week_4_Results_Control_Flow2.png)
 ---
 
 ### 3. Loops
+- For loops: iterate over lists, dictionaries, and sequences
+- While loops: repeat until condition is false
+- Summation examples with both loop types
+
 ```python
 sports = ["tennis", "volleyball", "soccer", "basketball"]
 for sport in sports:
@@ -166,10 +181,15 @@ while index1 < len(Sevens):
 print("Sum of numbers:",total1)
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_4/Week_4_Results_Loops.png)
 ---
 
 ### 4. Functions & Modules
+- Defining reusable functions (`add`, `subt`, `greet`)
+- Returning multiple values (sum and product)
+- Lambda functions for quick one‑liners
+- Sorting with `lambda` keys
+
 ```python
 def add(y,z):
     d=y+z
@@ -200,10 +220,15 @@ sorted_students=sorted(students,key=lambda s:s["score"])
 print(sorted_students)
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_4/Week_4_Results_Functions_and_Modules.png)
 ---
 
 ### 5. Built‑in Functions
+- `map()` for transformations
+- `filter()` for selecting items
+- `reduce()` for cumulative operations
+- `sum()`, `max()`, `min()` for aggregation
+
 ```python
 numbers3 = [2,4,6,8,10]
 squared = map(lambda r:r**2,numbers3)
@@ -251,7 +276,7 @@ min_mark = min(marks.values())
 print(min_mark)
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_4/Week_4_Results_Built%E2%80%91in_Functions.png)
 ---
 
 ## Key Observations / Lessons Learned

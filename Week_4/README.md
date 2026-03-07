@@ -284,7 +284,6 @@ print(min_mark)
 - Control flow allows branching logic and concise decision‑making with ternary operators.  
 - Loops are powerful for iterating over collections and performing cumulative tasks.  
 - Functions improve reusability and readability; lambdas are useful for quick operations.  
-- Built‑in functions (`map`, `filter`, `reduce`, `sum`, `max`, `min`) simplify common tasks.  
-- Professional documentation requires clear structure, code snippets, and screenshots.
+- Built‑in functions (`map`, `filter`, `reduce`, `sum`, `max`, `min`) simplify common tasks.
 
 ---

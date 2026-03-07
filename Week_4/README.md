@@ -51,7 +51,6 @@ print("Hello, my name is {name1} and I am {age1} years old.".format(name1 = name
 ```
 ### Screenshots of Results
 ![Result1]()
-
 ---
 
 ### 2. Control Flow
@@ -115,7 +114,6 @@ print(result2)
 ```
 ### Screenshots of Results
 ![Result1]()
-
 ---
 
 ### 3. Loops
@@ -169,7 +167,6 @@ print("Sum of numbers:",total1)
 ```
 ### Screenshots of Results
 ![Result1]()
-
 ---
 
 ### 4. Functions & Modules
@@ -204,7 +201,6 @@ print(sorted_students)
 ```
 ### Screenshots of Results
 ![Result1]()
-
 ---
 
 ### 5. Built‑in Functions
@@ -256,7 +252,6 @@ print(min_mark)
 ```
 ### Screenshots of Results
 ![Result1]()
-
 ---
 
 ## Key Observations / Lessons Learned

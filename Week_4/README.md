@@ -65,6 +65,8 @@ number = 12
 result = "Positive" if number > 0 else "Negative"
 print(result)
 ```
+### Screenshots of Results
+![Result1]()
 
 ---
 
@@ -83,6 +85,8 @@ while m <= 5:
     print(m)
     m += 1
 ```
+### Screenshots of Results
+![Result1]()
 
 ---
 
@@ -102,6 +106,8 @@ print(greeting)
 add1 = lambda p, q: p + q
 print(add1(55, 45))
 ```
+### Screenshots of Results
+![Result1]()
 
 ---
 
@@ -124,14 +130,12 @@ print(list(evens))
 product = reduce(lambda w, x: w * x, numbers)
 print(product)
 ```
+### Screenshots of Results
+![Result1]()
 
 ---
 
-## 📸 Screenshots of Results
-
----
-
-## 🔑 Key Observations / Lessons Learned
+## Key Observations / Lessons Learned
 - F‑strings are the most concise and readable way to format strings.  
 - Control flow allows branching logic and concise decision‑making with ternary operators.  
 - Loops are powerful for iterating over collections and performing cumulative tasks.  

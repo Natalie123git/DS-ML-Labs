@@ -27,7 +27,8 @@ print("Hello, my name is " + name + " and I am " + str(age) + " years old.")
 print(f"Hello, my name is {name} and I am {age} years old.")
 print("Hello, my name is {} and I am {} years old.".format(name, age))
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 2. Control Flow (If Statements)

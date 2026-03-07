@@ -15,6 +15,22 @@ The goal of this lab is to reinforce practical Python programming skills, in str
 
 ## Step‑by‑Step Process
 
+1. Practiced **string formatting** using concatenation, f‑strings, and the `.format()` method to combine text and variables seamlessly.  
+2. Applied **control flow** with `if`, `if‑else`, nested `if`, and `if‑elif‑else` statements to evaluate conditions and execute code blocks accordingly.  
+- Used **logical operators** (`and`, `or`) and **ternary operators** to express concise conditional logic.  
+- Implemented **for loops** to iterate over lists, dictionaries, and sequences, including tasks like summing values and filtering odd numbers.  
+- Applied **while loops** to repeat processes until conditions were met, including summing values and iterating through lists and dictionaries.  
+- Defined **functions** (`add`, `subt`, `greet`, `sumandproduct`) to organize reusable code, return values, and improve readability.  
+- Practiced **lambda functions** for quick, inline operations such as addition and sorting dictionaries by values.  
+- Explored **built‑in functions**:
+  - `map()` to transform lists (e.g., squaring numbers, capitalizing strings).  
+  - `filter()` to select items based on conditions (e.g., even numbers, positive numbers).  
+  - `reduce()` to cumulatively combine elements (e.g., product of numbers, maximum value).  
+  - `sum()`, `max()`, and `min()` to aggregate values efficiently.  
+- Documented **observations** on readability: f‑strings are most concise, `map` and `filter` simplify transformations, and `reduce` is powerful for cumulative tasks.  
+
+---
+
 ### 1. String Formatting
 - Concatenation with `+` and `str()`  
 - F‑strings for concise formatting  

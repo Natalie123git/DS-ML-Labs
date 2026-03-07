@@ -113,7 +113,7 @@ elif score >= 70:
     print("C")
 else:
     print("fail")
-
+#Ternary operators
 number = 12
 result = "Positive" if number > 0 else "Negative"
 print(result)

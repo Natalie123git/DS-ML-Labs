@@ -1,4 +1,4 @@
-# Week 4 Labs – string formatting, control flow, loops, functions, and built‑in modules
+# Week 4 Labs – String formatting, control flow, loops, functions, and built‑in modules
 
 ## Objective
 The goal of this lab is to reinforce practical Python programming skills, in string formatting, functions and modules.
@@ -109,7 +109,6 @@ print(product)
 ---
 
 ## 📸 Screenshots of Results
-*(Insert screenshots of your code execution here — each lab should show input and output clearly.)*
 
 ---
 
@@ -120,13 +119,5 @@ print(product)
 - Functions improve reusability and readability; lambdas are useful for quick operations.  
 - Built‑in functions (`map`, `filter`, `reduce`, `sum`, `max`, `min`) simplify common tasks.  
 - Professional documentation requires clear structure, code snippets, and screenshots.
-
----
-
-## ✅ Professional Presentation
-- Repository name: `DS-ML-Labs`  
-- Folder: `Week4/`  
-- File: `README.md` with clear headings, code blocks, and observations.  
-- Screenshots included for verification.  
 
 ---

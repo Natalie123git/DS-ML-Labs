@@ -1,4 +1,4 @@
-# Week 4 Labs – String formatting, control flow, loops, functions, and built‑in modules
+# String formatting, control flow, loops, functions, and built‑in modules
 
 ## Objective
 The goal of this lab is to reinforce practical Python programming skills, in string formatting, functions and modules.

@@ -1,7 +1,7 @@
 # String formatting, control flow, loops, functions, and built‑in modules
 
 ## Objective
-The goal of this lab is to reinforce practical Python programming skills, in string formatting, functions and modules.
+The goal of this lab was to reinforce practical Python programming skills, in string formatting, functions and modules.
 
 ---
 

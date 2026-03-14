@@ -1,6 +1,7 @@
 # Week 5 — Introduction to Pandas
 
-This week I explored **Pandas**, focusing on its two core data structures (Series and DataFrame) and the main operations for manipulating tabular data. I practiced creating Series and DataFrames, indexing and slicing, combining data with concatenation/merge/join, filtering, adding/removing columns, grouping and aggregation, handling missing data, and reading external files.
+This week explored **Pandas**, focusing on its two core data structures (Series and DataFrame) and the main operations for manipulating tabular data. 
+
 ## 1. Step‑by‑Step Process
 - Creating Series from lists and DataFrames from dictionaries.
 - Indexing and slicing (single vs. double brackets).
@@ -27,7 +28,7 @@ V = pd.Series(v)
 print(V)
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Series.png)
 ---
 
 ### 2. **DataFrame**
@@ -38,7 +39,7 @@ data = pd.DataFrame(df)
 print(data)
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Dataframe.png)
 ---
 
 ### 3. **Indexing & Slicing**
@@ -59,7 +60,7 @@ type(df_1["Age"])    # Series
 type(df_1[["Age"]])  # DataFrame
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_%20Indexing_%26_Slicing.png)
 ---
 
 ### 4. **Concatenation**
@@ -100,7 +101,8 @@ pd.concat([df_4,df_5],ignore_index=False,axis=1)
 
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Concatenation.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Concatenation1.png)
 ---
 
 ### 5. **Merge**
@@ -129,7 +131,7 @@ together_df
 df_8.merge(df_9,left_on="Names1",right_on="Names2",how="inner",suffixes=("_df8","_df9"))
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Merge.png)
 ---
 
 ### 6. **Join**
@@ -149,7 +151,7 @@ df_10,df_11
 joined = df_10.join(df_11,how="left",lsuffix="_left",rsuffix="_right")
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Join.png)
 ---
 
 ### 7. **Filtering**
@@ -161,7 +163,7 @@ filtered_df12 = df_12[df_12["Age"]>97]
 print(filtered_df12)
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Filtering.png)
 ---
 
 ### 8. **Adding & Removing Columns**
@@ -177,7 +179,7 @@ df_13.drop("Temperature_D_Celsius",axis=1,inplace=True)  # remove column
 df_13
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Adding_%26_Removing_Columns.png)
 ---
 
 ### 9. **Grouping & Aggregation**
@@ -199,7 +201,7 @@ grouped3_df14 = df_14.groupby("City").min()
 grouped3_df14
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Grouping_%26_Aggregation.png)
 ---
 
 ### 10. **Handling Missing Data**
@@ -217,7 +219,7 @@ cleaned_df15 = df_15.dropna()
 cleaned_df15
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Handling_Missing_Data.png)
 ---
 
 ### 11. **Reading Files**
@@ -238,7 +240,7 @@ df_17.head()
 df_17.tail()
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Reading_Files.png)
 ---
 
 

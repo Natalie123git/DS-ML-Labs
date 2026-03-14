@@ -48,6 +48,11 @@ print(data)
 tens = pd.Series([10,20,30,40,50])
 print(tens[2])   # access by position
 
+u = {"Name":["Natalie","Thomas","Ruth"],"Age":[99,98,97],"Location":["Barcelona","Jerusalem","Samaria"]}
+
+df_1 = pd.DataFrame(u)
+print(df_1)
+
 df_1[["Name"]]   # DataFrame slice
 df_1[["Age"]]
 type(df_1["Age"])    # Series

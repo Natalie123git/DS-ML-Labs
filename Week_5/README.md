@@ -1,4 +1,4 @@
-# Week 5 — Introduction to Pandas
+# Introduction to Pandas
 
 This week explored **Pandas**, focusing on its two core data structures (Series and DataFrame) and the main operations for manipulating tabular data. 
 

@@ -86,7 +86,6 @@ vertical_con
 horizontal_con = pd.concat([df_2,df_3],axis=1,keys=["df_1","df_2"])
 horizontal_con["df_2"]
 horizontal_con["df_2"][["Fruits","Veges"]] #indexing
-
 Spain = pd.DataFrame({"City":["Barcelona","Madrid","Malaga","Zaragoza"],"Temperature_D_Celsius":[25,28,31,39],"Wind_Speed_km/h":[8,5,3,20]})
 South_Africa = pd.DataFrame({"City":["Johannesburg","Pretoria","Capetown","Port Elizabeth"],"Temperature_D_Celsius":[28,25,14,20],"Wind_Speed_km/h":[9.3,9.3,25,18.5]})
 

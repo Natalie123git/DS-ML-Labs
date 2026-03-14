@@ -255,11 +255,11 @@ df_17.tail()
   - *Left* → all rows from left + matches from right.  
   - *Right* → all rows from right + matches from left.  
 - **Join** → combines DataFrames on index labels; `inner` keeps matches, `left` keeps all left indices.  
-- **Filtering** → conditions like `df[df["Age"] > 97]` extract subsets of rows.  
+- **Filtering** → conditions extract subsets of rows.  
 - **Adding/Removing Columns** → new columns can be assigned directly; `.drop(..., inplace=True)` removes permanently.  
 - **Grouping & Aggregation** → `.groupby()` organizes data; `.mean()`, `.max()`, `.min()` summarize groups.  
 - **Handling Missing Data** → `.isnull()` checks, `.dropna()` removes, `.fillna()` replaces.  
-- **Reading Files** → `pd.read_csv()` and `pd.read_excel()` import external datasets with flexible options.
+- **Reading Files** → `pd.read_csv()` and `pd.read_excel()` import external datasets with flexible options. Dont forget to change the first `\` to `/` after copying file pathway.
 
 ---
 

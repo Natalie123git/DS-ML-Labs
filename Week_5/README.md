@@ -241,8 +241,8 @@ df_17.tail()
 ```
 ### Screenshots of Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Reading_Files.png)
----
 
+---
 
 ## Key Observations / Lessons Learned
 

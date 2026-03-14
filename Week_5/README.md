@@ -26,7 +26,8 @@ v = [1,2,3,"Apple",4,5]
 V = pd.Series(v)
 print(V)
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 2. **DataFrame**
@@ -36,7 +37,8 @@ df = {"Name":["Natalie","Thomas","Ruth"],"Age":[99,98,97],"Location":["Barcelona
 data = pd.DataFrame(df)
 print(data)
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 3. **Indexing & Slicing**
@@ -51,7 +53,8 @@ df_1[["Age"]]
 type(df_1["Age"])    # Series
 type(df_1[["Age"]])  # DataFrame
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 4. **Concatenation**
@@ -71,7 +74,8 @@ vertical_con = pd.concat([df_2,df_3],axis=0,ignore_index=True)
 horizontal_con = pd.concat([df_2,df_3],axis=1,keys=["df_1","df_2"])
 horizontal_con["df_2"][["Fruits","Veges"]]
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 5. **Merge**
@@ -89,7 +93,8 @@ pd.merge(df_6,df_7,on="Names",how="right")  # preserve right
 # Different column names
 df_8.merge(df_9,left_on="Names1",right_on="Names2",how="inner",suffixes=("_df8","_df9"))
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 6. **Join**
@@ -101,7 +106,8 @@ Join combines DataFrames based on their **index labels**.
 df_10.join(df_11,how="inner")
 joined = df_10.join(df_11,how="left",lsuffix="_left",rsuffix="_right")
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 7. **Filtering**
@@ -109,7 +115,8 @@ Filter rows based on conditions:
 ```python
 filtered_df12 = df_12[df_12["Age"]>97]
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 8. **Adding & Removing Columns**
@@ -117,7 +124,8 @@ filtered_df12 = df_12[df_12["Age"]>97]
 df_13["UV_Index"] = [3,5,5,3]   # add new column
 df_13.drop("Temperature_D_Celsius",axis=1,inplace=True)  # remove column
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 9. **Grouping & Aggregation**
@@ -130,7 +138,8 @@ df_14.groupby("City").mean()
 df_14.groupby("City").max()
 df_14.groupby("City").min()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 10. **Handling Missing Data**
@@ -141,7 +150,8 @@ df_14.groupby("City").min()
 df_15.isnull()
 cleaned_df15 = df_15.dropna()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 11. **Reading Files**
@@ -160,8 +170,10 @@ df_17 = pd.read_excel("C:/Users/hp/Downloads/DS and ML/lectures/sample_data_exce
 df_17.head()
 df_17.tail()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
+
 
 ## Key Observations / Lessons Learned
 

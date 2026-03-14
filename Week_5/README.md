@@ -69,6 +69,12 @@ Concatenation stacks DataFrames either vertically (rows) or horizontally (column
 - `keys` → adds labels to distinguish sources.  
 - `ignore_index=True` → resets row numbering.  
 ```python
+
+df_2 = pd.DataFrame({"Fruits": ["Apples","Bananas","Oranges"], "Veges":["Cabbages","Onions","Carrots"]})
+df_3 = pd.DataFrame({"Fruits": ["Grapefruits","Pomegranetes","Jackfruits"], "Veges":["Celery","Asparagus","Beetroots"]})
+df_2
+df_3
+
 vertical_con = pd.concat([df_2,df_3],axis=0,keys=["df_2","df_3"])
 vertical_con.loc["df_2"]          # rows from df_2
 vertical_con.loc["df_2",0]        # row 0 of df_2

@@ -41,9 +41,8 @@ Imported NumPy, the numerical computing library.
 ```python
 import numpy as np
 ```
-
+\
 ---
-
 ### 2. Creating Arrays  
 Created arrays from Python lists and generated a zero-filled array.  
 ```python
@@ -54,7 +53,8 @@ twoDarray
 zero_array = np.zeros((3,4))             # 3x4 zero array
 zero_array
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Creating_Arrays.png)
 ---
 
 ### 3. Array Attributes  
@@ -75,7 +75,8 @@ print(data_type)
 
 zero_array.dtype
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Array_Attributes.png)
 ---
 
 ### 4. Array Operations  
@@ -91,7 +92,8 @@ print(subtrarray)
 multipyarray = 4 * twoDarray
 print(multipyarray)
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Array_Operations.png)
 ---
 
 ### 5. Aggregation Functions  
@@ -107,7 +109,8 @@ print(max_val_array)
 min_val_array = twoDarray.min()
 print(min_val_array)
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Aggregation_Functions%20%20.png)
 ---
 
 ### 6. Indexing  
@@ -135,7 +138,8 @@ print(firstrow_firstindex_onwards2)
 firstrow_firstindex_onwards3 = twoDarray[:1,1:]
 print(firstrow_firstindex_onwards3)
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Indexing.png)
 ---
 
 ### 7. Array Manipulation  
@@ -149,7 +153,8 @@ print(reshaped_array)
 reshaped_array2 = twoDarray.reshape(6,1)
 print(reshaped_array2)
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Array_Manipulation%20.png)
 ---
 
 ### 8. Concatenation and Append  
@@ -171,7 +176,8 @@ print(appended_array2)
 concated_array2D = np.concatenate([[oneDarray], np.array([[18,21,24,27,30]])])
 print(concated_array2D)
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Concatenation_%26_Append.png)
 ---
 
 ### 9. Broadcasting  
@@ -185,7 +191,8 @@ print(20 + z)
 w = 2
 print(z * w)
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Broadcasting.png)
 ---
 
 ### 10. Random Number Generation  
@@ -207,7 +214,8 @@ array1 = np.array(["G","H","J","K"])
 random_num5 = np.random.choice(array1,3)
 print(random_num5)
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Random_Number_Generation.png)
 ---
 
 ### 11. Linear Algebra  
@@ -242,7 +250,8 @@ print(identity_mat)
 determinant = np.linalg.det(M)
 print(int(determinant))
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Linear_Algebra.png)
 ---
 
 ### 12. Deleting and Masking  
@@ -256,7 +265,8 @@ R = Q != 3
 new_array = Q[R]
 print(new_array)
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Deleting_%26_Masking.png)
 ---
 
 ### 13. Statistical Functions  
@@ -277,7 +287,8 @@ print(array4_mode)
 array_SD = np.std(array4)
 print(array_SD)
 ```
-
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Statistical_Functions.png)
 ---
 
 ## Key Observations / Lessons Learned

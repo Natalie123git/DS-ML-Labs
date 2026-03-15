@@ -289,6 +289,7 @@ print(array_SD)
 ```
 ### Screenshots of Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_5/Week_5_Results_Statistical_Functions.png)
+
 ---
 
 ## Key Observations / Lessons Learned

@@ -14,7 +14,7 @@ Array creation, manipulation, indexing, broadcasting, random generation, and lin
 
 ---
 
-## Step-by-Step Process & Commands Executed  
+## Step-by-Step Process
 - Imported NumPy library.
 - Created a one‑dimensional array from a list.
 - Created a two‑dimensional array from a nested list.

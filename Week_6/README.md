@@ -172,7 +172,7 @@ plt.legend()
 plt.show()
 ```
 ### Results
-![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/line_map_iris.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/line_plot_iris.png)
 ---
 
 ### 6. Scatter Plot

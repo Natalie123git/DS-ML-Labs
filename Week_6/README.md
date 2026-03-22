@@ -52,7 +52,7 @@ To practice creating different types of plots using Matplotlib, reinforce unders
 
 ## Executed Code
 
-### 1. Import Libraries and Load Datasets
+### 1. Import Libraries Load Breast_Cancer Dataset and do an overview
 - Import required libraries.  
 - Load Breast Cancer dataset.  
 - Extract features and targets.  
@@ -78,7 +78,9 @@ df01["target"] = pd.Categorical.from_codes(y1, Target_names1)
 print(df01.head())
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_Import_Libraries_and_BC_dataset.png)
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_BC_dataset_overview.png)
 ---
 
 ### 2. Bar Chart
@@ -110,7 +112,11 @@ plt.ylabel("Frequency")
 plt.show()
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_iris_dataset.png)
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_iris_dataset2.png)
+### Screenshots of Results
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/barchart_iris.png)
 ---
 
 ### 3. Pie Chart
@@ -126,7 +132,7 @@ plt.title("PIE CHART of Iris Species")
 plt.show()
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/pie_chart_iris.png)
 ---
 
 ### 4. Heatmap
@@ -151,7 +157,7 @@ plt.title('HEATMAP of Correlation Matrix (Iris Dataset)')
 plt.show()
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/heatmap_iris.png)
 ---
 
 ### 5. Line Plot
@@ -168,7 +174,7 @@ plt.legend()
 plt.show()
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/line_map_iris.png)
 ---
 
 ### 6. Scatter Plot
@@ -186,7 +192,7 @@ plt.legend()
 plt.show()
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/scatter_plot_iris.png)
 ---
 
 ### 7. Box Plot
@@ -208,7 +214,7 @@ plt.xticks(ticks=np.arange(len(Target_names2)), labels=Target_names2)
 plt.show()
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/box_plot_iris.png)
 ---
 
 ### 8. Violin Plot
@@ -228,7 +234,7 @@ plt.xticks(ticks=np.arange(len(Target_names2)), labels=Target_names2)
 plt.show()
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/violin_plot_iris.png)
 ---
 
 ### 9. Histogram
@@ -247,7 +253,7 @@ plt.savefig('histogram.png')
 plt.show()
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/histogram_iris.png)
 ---
 
 ### 10. Export Dataset
@@ -261,8 +267,7 @@ df02['species'] = pd.Categorical.from_codes(iris.target, iris.target_names)
 df02.to_csv('iris_dataset.csv', index=False)
 print('Data save as csv')
 ```
-### Screenshots of Results
-![Result1]()
+Result: https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/iris_dataset.csv
 ---
 
 ## Key Observations / Lessons Learned

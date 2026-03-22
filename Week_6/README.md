@@ -79,7 +79,6 @@ print(df01.head())
 ```
 ### Screenshots of Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_Import_Libraries_and_BC_dataset.png)
-### Screenshots of Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_BC_dataset_overview.png)
 ---
 
@@ -113,9 +112,8 @@ plt.show()
 ```
 ### Screenshots of Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_iris_dataset.png)
-### Screenshots of Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_iris_dataset2.png)
-### Screenshots of Results
+### Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/barchart_iris.png)
 ---
 
@@ -131,7 +129,7 @@ plt.pie(np.bincount(y2), labels=Target_names2, autopct='%1.1f%%', startangle=120
 plt.title("PIE CHART of Iris Species")
 plt.show()
 ```
-### Screenshots of Results
+### Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/pie_chart_iris.png)
 ---
 
@@ -156,7 +154,7 @@ plt.yticks(ticks=np.arange(len(iris.feature_names)), labels=iris.feature_names)
 plt.title('HEATMAP of Correlation Matrix (Iris Dataset)')
 plt.show()
 ```
-### Screenshots of Results
+### Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/heatmap_iris.png)
 ---
 
@@ -173,7 +171,7 @@ plt.title('Line Plot of Sepal Length (cm)')
 plt.legend()
 plt.show()
 ```
-### Screenshots of Results
+### Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/line_map_iris.png)
 ---
 
@@ -191,7 +189,7 @@ plt.title('SCATTER PLOT of Sepal Length vs Sepal Width')
 plt.legend()
 plt.show()
 ```
-### Screenshots of Results
+### Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/scatter_plot_iris.png)
 ---
 
@@ -213,7 +211,7 @@ plt.title('BOX PLOT of Petal Length (cm) by Species')
 plt.xticks(ticks=np.arange(len(Target_names2)), labels=Target_names2)
 plt.show()
 ```
-### Screenshots of Results
+### Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/box_plot_iris.png)
 ---
 
@@ -233,7 +231,7 @@ plt.title('VIOLIN PLOT of Petal Width (cm) by Species')
 plt.xticks(ticks=np.arange(len(Target_names2)), labels=Target_names2)
 plt.show()
 ```
-### Screenshots of Results
+### Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/violin_plot_iris.png)
 ---
 
@@ -252,7 +250,7 @@ plt.legend()
 plt.savefig('histogram.png')
 plt.show()
 ```
-### Screenshots of Results
+### Results
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/histogram_iris.png)
 ---
 
@@ -267,7 +265,8 @@ df02['species'] = pd.Categorical.from_codes(iris.target, iris.target_names)
 df02.to_csv('iris_dataset.csv', index=False)
 print('Data save as csv')
 ```
-Result: https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/iris_dataset.csv
+### Result: 
+https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/iris_dataset.csv
 ---
 
 ## Key Observations / Lessons Learned

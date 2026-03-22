@@ -6,7 +6,7 @@ Qualitative and Quantitative Visualization with Matplotlib.
 To practice creating different types of plots using Matplotlib, reinforce understanding of dataset handling with scikit‑learn and pandas, and document the process professionally.
 
 ## Tools Used
-- Python 3  
+- Python
 - NumPy  
 - Pandas  
 - Matplotlib  

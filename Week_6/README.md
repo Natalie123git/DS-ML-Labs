@@ -46,9 +46,9 @@ To practice creating different types of plots using Matplotlib, reinforce unders
 9. Plot a histogram  
    - A histogram groups continuous data into bins and shows frequency with bar heights.  
    - It is best used for understanding the distribution of a single variable.
-10. Export dataset to CSV  
-   - Exporting data to CSV saves it in a structured, portable format.  
-   - It is best used when sharing datasets or preparing them for external analysis.
+10. Export dataset to CSV
+    - Exporting data to CSV saves it in a structured, portable format.
+    - It is best used when sharing datasets or preparing them for external analysis.
 ---
 
 ## Executed Code

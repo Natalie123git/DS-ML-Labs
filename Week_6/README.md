@@ -1,6 +1,5 @@
 # MATPLOTLIB: Graphs and Visualization
 
-## Lab Title
 Qualitative and Quantitative Visualization with Matplotlib.
 
 ## Objective

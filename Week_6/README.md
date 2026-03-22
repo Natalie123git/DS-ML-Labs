@@ -78,7 +78,8 @@ df01 = pd.DataFrame(X1, columns=Feature_names1)
 df01["target"] = pd.Categorical.from_codes(y1, Target_names1)
 print(df01.head())
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 2. Bar Chart
@@ -109,7 +110,8 @@ plt.xlabel("Species")
 plt.ylabel("Frequency")
 plt.show()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 3. Pie Chart
@@ -124,7 +126,8 @@ plt.pie(np.bincount(y2), labels=Target_names2, autopct='%1.1f%%', startangle=120
 plt.title("PIE CHART of Iris Species")
 plt.show()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 4. Heatmap
@@ -148,7 +151,8 @@ plt.yticks(ticks=np.arange(len(iris.feature_names)), labels=iris.feature_names)
 plt.title('HEATMAP of Correlation Matrix (Iris Dataset)')
 plt.show()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 5. Line Plot
@@ -164,7 +168,8 @@ plt.title('Line Plot of Sepal Length (cm)')
 plt.legend()
 plt.show()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 6. Scatter Plot
@@ -181,7 +186,8 @@ plt.title('SCATTER PLOT of Sepal Length vs Sepal Width')
 plt.legend()
 plt.show()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 7. Box Plot
@@ -202,7 +208,8 @@ plt.title('BOX PLOT of Petal Length (cm) by Species')
 plt.xticks(ticks=np.arange(len(Target_names2)), labels=Target_names2)
 plt.show()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 8. Violin Plot
@@ -221,7 +228,8 @@ plt.title('VIOLIN PLOT of Petal Width (cm) by Species')
 plt.xticks(ticks=np.arange(len(Target_names2)), labels=Target_names2)
 plt.show()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 9. Histogram
@@ -239,7 +247,8 @@ plt.legend()
 plt.savefig('histogram.png')
 plt.show()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 10. Export Dataset
@@ -253,7 +262,8 @@ df02['species'] = pd.Categorical.from_codes(iris.target, iris.target_names)
 df02.to_csv('iris_dataset.csv', index=False)
 print('Data save as csv')
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ## Key Observations / Lessons Learned

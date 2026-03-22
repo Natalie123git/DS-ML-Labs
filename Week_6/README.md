@@ -18,10 +18,10 @@ To practice creating different types of plots using Matplotlib, reinforce unders
 ## Step‑by‑Step Process
 
 1. Import libraries and load datasets  
-- Import required libraries (numpy, pandas, matplotlib, sklearn.datasets).
-- Load the Breast Cancer dataset and Iris dataset.
-- Extract features, targets, and names.
-- Convert arrays into pandas DataFrames for easier exploration. 
+   - Import required libraries (numpy, pandas, matplotlib, sklearn.datasets).
+   - Load the Breast Cancer dataset and Iris dataset.
+   - Extract features, targets, and names.
+   - Convert arrays into pandas DataFrames for easier exploration. 
 2. Plot a bar chart  
    - A bar chart uses rectangular bars to represent categorical data, with bar height showing the value or frequency.  
    - It is best used when comparing discrete categories, such as counts of different species.    

@@ -41,8 +41,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 ```
-### Screenshots of Results
-![Result1]()
+!
 ---
 
 ### 2. Load Dataset  
@@ -54,7 +53,7 @@ titanic_data
 titanic_data.head()
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_titanic_dataset.png)
 ---
 
 ### 3. Initial Data Inspection  

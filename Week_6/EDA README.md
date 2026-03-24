@@ -41,7 +41,8 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 2. Load Dataset  
@@ -52,7 +53,8 @@ titanic_data = pd.read_csv(url)
 titanic_data
 titanic_data.head()
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 3. Initial Data Inspection  
@@ -60,7 +62,8 @@ We check the dataset structure, column types, and missing values using `.info()`
 ```python
 print(titanic_data.info())
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 4. Display Summary Statistics  
@@ -68,7 +71,8 @@ We generate descriptive statistics for all columns, including categorical and nu
 ```python
 titanic_data.describe(include="all")
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 5. Summary Statistics for Numerical Features  
@@ -77,7 +81,8 @@ We focus on numerical columns to understand distributions and ranges.
 numerical_sum = titanic_data.describe()
 numerical_sum
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 6. Summary Statistics for Categorical Features  
@@ -86,7 +91,8 @@ We summarize categorical columns to see unique values and frequencies.
 categorical_sum = titanic_data.describe(include=["object"])
 categorical_sum
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 7. Check for Missing Values  
@@ -100,7 +106,10 @@ sns.heatmap(titanic_data.isnull(), cbar=False, cmap="cividis")
 plt.title("Missing values heatmap in Titanic dataset")
 plt.show()
 ```
-
+### Screenshots of Results
+![Result1]()
+### Results:
+![Result1]()
 ---
 
 ### 8. Data Cleaning  
@@ -111,7 +120,8 @@ titanic_data["Embarked"].fillna(titanic_data["Embarked"].mode()[0], inplace=True
 titanic_data.drop(columns="Cabin", inplace=True)
 print(titanic_data.isnull().sum())
 ```
-
+### Screenshots of Results
+![Result1]()
 ---
 
 ### 9. Data Visualization  
@@ -126,6 +136,8 @@ plt.ylabel("Number")
 plt.savefig("titanic_survival_Rate_distribution.png")
 plt.show()
 ```
+### Results:
+![Result1]()
 
 #### Count Plot for Passenger Class  
 Displays the distribution of passengers across classes.  
@@ -137,6 +149,8 @@ plt.ylabel("Number")
 plt.savefig("titanic_pclass_distribution.png")
 plt.show()
 ```
+### Results:
+![Result1]()
 
 #### Histogram for Age Distribution  
 Shows the age distribution with a kernel density estimate.  
@@ -148,6 +162,8 @@ plt.ylabel("Number")
 plt.savefig("titanic_age_distribution.png")
 plt.show()
 ```
+### Results:
+![Result1]()
 
 #### Barplot for Survival Rate by Passenger Class  
 Compares survival rates across passenger classes.  
@@ -159,6 +175,8 @@ plt.ylabel("Survival Rate")
 plt.savefig("titanic_survival_Rate_by_passenger_Class.png")
 plt.show()
 ```
+### Results:
+![Result1]()
 
 #### Barplot for Survival Rate by Sex  
 Compares survival rates between male and female passengers.  
@@ -170,6 +188,8 @@ plt.ylabel("Survival Rate")
 plt.savefig("titanic_survival_Rate_by_sex.png")
 plt.show()
 ```
+### Results:
+![Result1]()
 
 #### Subplots: Survival Counts by Sex  
 Side‑by‑side plots showing male vs female survival counts.  
@@ -188,6 +208,8 @@ plt.tight_layout()
 plt.savefig("titanic_survival_Rate_by_both_sexes.png")
 plt.show()
 ```
+### Results:
+![Result1]()
 
 #### Subplots: Survival by Passenger Class  
 Side‑by‑side plots showing survival counts for each passenger class.  
@@ -210,6 +232,8 @@ plt.tight_layout()
 plt.savefig("titanic_survival_Rate_by_both_Pclass.png")
 plt.show()
 ```
+### Results:
+![Result1]()
 
 #### Box Plots  
 Visualize distributions of age and fare by class and survival.  
@@ -230,6 +254,8 @@ sns.boxplot(x="Survived", y="Fare", data=titanic_data)
 plt.savefig("titanic_fare_distribution_by_survival.png")
 plt.show()
 ```
+### Results:
+![Result1]()
 
 #### Correlation Heatmap  
 Shows correlations between numerical features.  
@@ -241,9 +267,8 @@ sns.heatmap(correlation_matrix, annot=True, cmap="inferno", vmin=-1, vmax=1)
 plt.title("Correlation Heatmap of Titanic Features")
 plt.show()
 ```
----
-
-## Screenshots of Results
+### Results:
+![Result1]()
 
 ---
 

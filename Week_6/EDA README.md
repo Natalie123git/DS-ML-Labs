@@ -35,7 +35,7 @@ To reinforce practical data analysis skills and demonstrate consistent progress 
 ## Commands Executed
 
 ### 1. Import Libraries  
-We begin by importing the core Python libraries for data manipulation and visualization.  
+Importing the core Python libraries for data manipulation and visualization.  
 ```python
 import pandas as pd
 import seaborn as sns
@@ -45,7 +45,7 @@ import matplotlib.pyplot as plt
 ---
 
 ### 2. Load Dataset  
-The Titanic dataset is loaded directly from GitHub and the first few rows are displayed.  
+Load Titanic dataset directly from GitHub and display the first few rows.  
 ```python
 url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
 titanic_data = pd.read_csv(url)
@@ -57,7 +57,7 @@ titanic_data.head()
 ---
 
 ### 3. Initial Data Inspection  
-We check the dataset structure, column types, and missing values using `.info()`.  
+Check the dataset structure, column types, and missing values using `.info()`.  
 ```python
 print(titanic_data.info())
 ```
@@ -66,7 +66,7 @@ print(titanic_data.info())
 ---
 
 ### 4. Display Summary Statistics  
-We generate descriptive statistics for all columns, including categorical and numerical.  
+Generate descriptive statistics for all columns, including categorical and numerical.  
 ```python
 titanic_data.describe(include="all")
 ```
@@ -75,7 +75,7 @@ titanic_data.describe(include="all")
 ---
 
 ### 5. Summary Statistics for Numerical Features  
-We focus on numerical columns to understand distributions and ranges.  
+Focus on numerical columns to understand distributions and ranges.  
 ```python
 numerical_sum = titanic_data.describe()
 numerical_sum
@@ -85,7 +85,7 @@ numerical_sum
 ---
 
 ### 6. Summary Statistics for Categorical Features  
-We summarize categorical columns to see unique values and frequencies.  
+Summarize categorical columns to see unique values and frequencies.  
 ```python
 categorical_sum = titanic_data.describe(include=["object"])
 categorical_sum
@@ -95,7 +95,7 @@ categorical_sum
 ---
 
 ### 7. Check for Missing Values  
-We count missing values per column and visualize them with a heatmap.  
+Count missing values per column and visualize them with a heatmap.  
 ```python
 missing_vals = titanic_data.isnull().sum()
 print(missing_vals)
@@ -112,7 +112,7 @@ plt.show()
 ---
 
 ### 8. Data Cleaning  
-We impute missing values in `Age` and `Embarked`, and drop the `Cabin` column.  
+Impute missing values in `Age` and `Embarked`, and drop the `Cabin` column.  
 ```python
 titanic_data["Age"].fillna(titanic_data["Age"].median(), inplace=True)
 titanic_data["Embarked"].fillna(titanic_data["Embarked"].mode()[0], inplace=True)
@@ -126,7 +126,7 @@ print(titanic_data.isnull().sum())
 ### 9. Data Visualization  
 
 #### Count Plot for Survival  
-Shows the number of passengers who survived vs those who did not.  
+Show the number of passengers who survived vs those who did not.  
 ```python
 sns.countplot(x="Survived", data=titanic_data)
 plt.title("Number of Passengers that Survived")
@@ -139,7 +139,7 @@ plt.show()
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_survival_Rate_distribution.png)
 
 #### Count Plot for Passenger Class  
-Displays the distribution of passengers across classes.  
+Display the distribution of passengers across classes.  
 ```python
 sns.countplot(x="Pclass", data=titanic_data)
 plt.title("Distribution of Passenger Class")
@@ -152,7 +152,7 @@ plt.show()
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_pclass_distribution.png)
 
 #### Histogram for Age Distribution  
-Shows the age distribution with a kernel density estimate.  
+Show the age distribution with a kernel density estimate.  
 ```python
 sns.histplot(titanic_data["Age"].dropna(), bins=20, kde=True)
 plt.title("Distribution of Passenger Age")
@@ -165,7 +165,7 @@ plt.show()
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_age_distribution.png)
 
 #### Barplot for Survival Rate by Passenger Class  
-Compares survival rates across passenger classes.  
+Compare survival rates across passenger classes.  
 ```python
 sns.barplot(x="Pclass", y="Survived", data=titanic_data)
 plt.title("Survival rate of Passengers by Passenger class")
@@ -178,7 +178,7 @@ plt.show()
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_survival_Rate_by_passenger_Class.png)
 
 #### Barplot for Survival Rate by Sex  
-Compares survival rates between male and female passengers.  
+Compare survival rates between male and female passengers.  
 ```python
 sns.barplot(x="Sex", y="Survived", data=titanic_data)
 plt.title("Survival rate of Passengers by Sex")
@@ -256,11 +256,11 @@ plt.show()
 ### Results:
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_age_distribution_by_class.png)
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_fare_distribution_by_class.png)
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_age_distribution_by_survival.png)
 ![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_fare_distribution_by_survival.png)
 
 #### Correlation Heatmap  
-Shows correlations between numerical features.  
+Show correlations between numerical features.  
 ```python
 plt.figure(figsize=(10,6))
 numerical_columns = titanic_data.select_dtypes(include=["float64","int64"])

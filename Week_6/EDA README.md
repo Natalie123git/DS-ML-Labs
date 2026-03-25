@@ -6,7 +6,7 @@ To reinforce practical data analysis skills and demonstrate consistent progress 
 ---
 
 ## Tools Used
-- Python 3  
+- Python  
 - pandas  
 - seaborn  
 - matplotlib  
@@ -62,7 +62,7 @@ We check the dataset structure, column types, and missing values using `.info()`
 print(titanic_data.info())
 ```
 ### Screenshots of Results
-![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_titanic_data_inspection.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_titanic_data_inspection.png)
 ---
 
 ### 4. Display Summary Statistics  
@@ -71,7 +71,7 @@ We generate descriptive statistics for all columns, including categorical and nu
 titanic_data.describe(include="all")
 ```
 ### Screenshots of Results
-![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_titanic_summary_statistics.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_titanic_summary_statistics.png)
 ---
 
 ### 5. Summary Statistics for Numerical Features  
@@ -81,7 +81,7 @@ numerical_sum = titanic_data.describe()
 numerical_sum
 ```
 ### Screenshots of Results
-![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_titanic_summary_numerical_statistics.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_titanic_summary_numerical_statistics.png)
 ---
 
 ### 6. Summary Statistics for Categorical Features  
@@ -91,7 +91,7 @@ categorical_sum = titanic_data.describe(include=["object"])
 categorical_sum
 ```
 ### Screenshots of Results
-![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_titanic_summary_categorical_features.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_titanic_summary_categorical_features.png)
 ---
 
 ### 7. Check for Missing Values  
@@ -106,9 +106,9 @@ plt.title("Missing values heatmap in Titanic dataset")
 plt.show()
 ```
 ### Screenshots of Results
-![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_titanic_summary_missing_values.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_titanic_summary_missing_values.png)
 ### Results:
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_missing_values.png)
 ---
 
 ### 8. Data Cleaning  
@@ -120,7 +120,7 @@ titanic_data.drop(columns="Cabin", inplace=True)
 print(titanic_data.isnull().sum())
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results__titanic_data_cleaning.png)
 ---
 
 ### 9. Data Visualization  
@@ -136,7 +136,7 @@ plt.savefig("titanic_survival_Rate_distribution.png")
 plt.show()
 ```
 ### Results:
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_survival_Rate_distribution.png)
 
 #### Count Plot for Passenger Class  
 Displays the distribution of passengers across classes.  
@@ -149,7 +149,7 @@ plt.savefig("titanic_pclass_distribution.png")
 plt.show()
 ```
 ### Results:
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_pclass_distribution.png)
 
 #### Histogram for Age Distribution  
 Shows the age distribution with a kernel density estimate.  
@@ -162,7 +162,7 @@ plt.savefig("titanic_age_distribution.png")
 plt.show()
 ```
 ### Results:
-![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/histogram_iris.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_age_distribution.png)
 
 #### Barplot for Survival Rate by Passenger Class  
 Compares survival rates across passenger classes.  
@@ -175,7 +175,7 @@ plt.savefig("titanic_survival_Rate_by_passenger_Class.png")
 plt.show()
 ```
 ### Results:
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_survival_Rate_by_passenger_Class.png)
 
 #### Barplot for Survival Rate by Sex  
 Compares survival rates between male and female passengers.  
@@ -188,7 +188,7 @@ plt.savefig("titanic_survival_Rate_by_sex.png")
 plt.show()
 ```
 ### Results:
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_survival_Rate_by_sex.png)
 
 #### Subplots: Survival Counts by Sex  
 Side‑by‑side plots showing male vs female survival counts.  
@@ -208,7 +208,7 @@ plt.savefig("titanic_survival_Rate_by_both_sexes.png")
 plt.show()
 ```
 ### Results:
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_survival_Rate_by_both_sexes.png)
 
 #### Subplots: Survival by Passenger Class  
 Side‑by‑side plots showing survival counts for each passenger class.  
@@ -232,7 +232,7 @@ plt.savefig("titanic_survival_Rate_by_both_Pclass.png")
 plt.show()
 ```
 ### Results:
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_survival_Rate_by_both_Pclass.png)
 
 #### Box Plots  
 Visualize distributions of age and fare by class and survival.  
@@ -254,7 +254,10 @@ plt.savefig("titanic_fare_distribution_by_survival.png")
 plt.show()
 ```
 ### Results:
-![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/box_plot_iris.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_age_distribution_by_class.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_fare_distribution_by_class.png)
+![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_fare_distribution_by_survival.png)
 
 #### Correlation Heatmap  
 Shows correlations between numerical features.  
@@ -267,7 +270,7 @@ plt.title("Correlation Heatmap of Titanic Features")
 plt.show()
 ```
 ### Results:
-![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/heatmap_iris.png)
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/titanic_correlation_heatmap.png)
 
 ---
 

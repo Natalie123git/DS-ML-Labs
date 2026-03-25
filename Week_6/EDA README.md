@@ -62,7 +62,7 @@ We check the dataset structure, column types, and missing values using `.info()`
 print(titanic_data.info())
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_titanic_data_inspection.png)
 ---
 
 ### 4. Display Summary Statistics  
@@ -71,7 +71,7 @@ We generate descriptive statistics for all columns, including categorical and nu
 titanic_data.describe(include="all")
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_titanic_summary_statistics.png)
 ---
 
 ### 5. Summary Statistics for Numerical Features  
@@ -81,7 +81,7 @@ numerical_sum = titanic_data.describe()
 numerical_sum
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_titanic_summary_numerical_statistics.png)
 ---
 
 ### 6. Summary Statistics for Categorical Features  
@@ -91,7 +91,7 @@ categorical_sum = titanic_data.describe(include=["object"])
 categorical_sum
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_titanic_summary_categorical_features.png)
 ---
 
 ### 7. Check for Missing Values  
@@ -106,7 +106,7 @@ plt.title("Missing values heatmap in Titanic dataset")
 plt.show()
 ```
 ### Screenshots of Results
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/Week_6_Results_load_titanic_summary_missing_values.png)
 ### Results:
 ![Result1]()
 ---
@@ -162,7 +162,7 @@ plt.savefig("titanic_age_distribution.png")
 plt.show()
 ```
 ### Results:
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/histogram_iris.png)
 
 #### Barplot for Survival Rate by Passenger Class  
 Compares survival rates across passenger classes.  
@@ -254,7 +254,7 @@ plt.savefig("titanic_fare_distribution_by_survival.png")
 plt.show()
 ```
 ### Results:
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/box_plot_iris.png)
 
 #### Correlation Heatmap  
 Shows correlations between numerical features.  
@@ -267,7 +267,7 @@ plt.title("Correlation Heatmap of Titanic Features")
 plt.show()
 ```
 ### Results:
-![Result1]()
+![Result1](https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_6/heatmap_iris.png)
 
 ---
 

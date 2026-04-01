@@ -354,6 +354,7 @@ class ChurnPrediction:
         self.y4 = self.data[['Exited']]
 
         self.X4 = pd.get_dummies(self.X4, columns = ["Geography", "Gender"])
+        #self.X.drop(columns=["Geography", "Gender"],axis=1, inplace=True)
 
     def split_data(self):
         self.train_X4, self.val_X4, self.train_y4, self.val_y4 = train_test_split(
@@ -379,7 +380,7 @@ class ChurnPrediction:
     def load_model(self, model_path):
         self.model = joblib.load(model_path)
 
-# Call
+#### Call
 churn4 = ChurnPrediction("C:/Users\hp\Downloads\DS and ML\Week 7\churn.xlsx")
 churn4.load_data()
 churn4.preprocess_data()
@@ -389,7 +390,7 @@ accuracy, auc = churn4.evaluate_model()
 
 churn4.save_model('churn4_model.pkl')
 ```
-
+.
 ---
 
 ### Decision Tree Classifier – Procedural Approach  
@@ -408,6 +409,8 @@ def preprocess_data(data):
     y5 = data[['Exited']]
 
     X5 = pd.get_dummies(X5, columns = ["Geography", "Gender"])
+    #X.drop(columns=["Geography", "Gender"], inplace=True)
+
     return X5, y5
 
 def split_data(X5, y5):
@@ -432,7 +435,7 @@ def evaluate_model(model, X5, y5):
 def save_model(model, model_path):
     joblib.dump(model, model_path)
 
-# Call
+#### Call
 file_path = "C:/Users\hp\Downloads\DS and ML\Week 7\churn.xlsx"
 data = load_data(file_path)
 X5, y5 = preprocess_data(data)
@@ -441,7 +444,7 @@ model = train_model(train_X5, train_y5)
 accuracy, auc = evaluate_model(model, val_X5, val_y5)
 save_model(model, 'churn5_model.pkl')
 ```
-
+.
 ---
 
 ### Random Forest Classifier – OOP Approach  
@@ -497,6 +500,7 @@ class ChurnPrediction:
     def load_model(self, model_path):
         self.model = joblib.load(model_path)
 
+#### Call
 churn6 = ChurnPrediction("C:/Users\hp\Downloads\DS and ML\Week 7\churn.xlsx")
 churn6.load_data()
 churn6.preprocess_data()
@@ -504,9 +508,10 @@ churn6.split_data()
 churn6.train_model()
 accuracy, auc = churn6.evaluate_model()
 
+#### Save the model
 churn6.save_model('churn6_model.pkl')
 ```
-
+.
 ---
 
 ### Random Forest Classifier – Procedural Approach  
@@ -525,6 +530,7 @@ def preprocess_data(data):
     y7 = data[['Exited']]
 
     X7= pd.get_dummies(X7, columns = ["Geography", "Gender"])
+
     return X7, y7
 
 def split_data(X7, y7):
@@ -549,7 +555,7 @@ def evaluate_model(model, X7, y7):
 def save_model(model, model_path):
     joblib.dump(model, model_path)
 
-# Usage
+# Call
 file_path = "C:/Users\hp\Downloads\DS and ML\Week 7\churn.xlsx"
 data = load_data(file_path)
 X7, y7 = preprocess_data(data)
@@ -558,7 +564,7 @@ model = train_model(train_X7, train_y7)
 accuracy, auc = evaluate_model(model, val_X7, val_y7)
 save_model(model, 'churn7_model.pkl')
 ```
-
+.
 ---
 
 ### Support Vector Machine (SVM) – OOP Approach  
@@ -573,10 +579,83 @@ class ChurnPrediction:
         self.train_X8 = None
         self.val_X8 = None
         self.train_y8 = None
-        self.val_y8
+        self.val_y8 = None
+        self.model = None
 
+    def load_data(self):
+        self.data = pd.read_excel(self.file_path)
 
+    def preprocess_data(self):
+        selected_features = [
+            'CreditScore', 'Geography', 'Gender', 'Age',
+            'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard',
+            'IsActiveMember', 'EstimatedSalary']
+        self.X8 = self.data[selected_features]
+        self.y8 = self.data[['Exited']]
 
+        self.X8 = pd.get_dummies(self.X8, columns = ["Geography", "Gender"])
+
+    def split_data(self):
+        self.train_X8, self.val_X8, self.train_y8, self.val_y8 = train_test_split(
+            self.X8, self.y8, random_state=0, train_size=0.8)
+
+    def train_model(self):
+        self.model = SVC(probability=True,random_state=42)
+        self.model.fit(self.train_X8, self.train_y8)
+
+    def evaluate_model(self):
+      val_prediction = self.model.predict(self.val_X8)
+      accuracy = accuracy_score(self.val_y8, val_prediction)
+      print(f'Model accuracy: {accuracy}')
+      y8_pred_proba = self.model.predict_proba(self.val_X8)[:,1]
+      auc = roc_auc_score(self.val_y8, y8_pred_proba)
+      print(f'Model auc score: {auc}')
+      return accuracy, auc
+    def save_model(self, model_path):
+        joblib.dump(self.model, model_path)
+
+    def load_model(self, model_path):
+        self.model = joblib.load(model_path)
+
+#### Call
+churn8 = ChurnPrediction("C:/Users\hp\Downloads\DS and ML\Week 7\churn.xlsx")
+churn8.load_data()
+churn8.preprocess_data()
+churn8.split_data()
+churn8.train_model()
+accuracy, auc = churn8.evaluate_model()
+
+# Save the model
+churn8.save_model('churn6_model.pkl')
+
+```
+.
+---
+
+## GRADIENT BOOSTING ALGORITHMS 
+
+### Import Libraries  
+We start by importing all necessary libraries
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import LabelEncoder, MinMaxScaler,StandardScaler
+from sklearn.model_selection import train_test_split, GridSearchCV,RandomizedSearchCV
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score,roc_auc_score
+from sklearn.svm import SVC
+import joblib
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
+import warnings
+warnings.filterwarnings('ignore')
+import xgboost as xgb
+import lightgbm as lgb
+from scipy.stats import uniform, randint
+import scipy.stats as stats
+```
+### XGBoost
 
 
 

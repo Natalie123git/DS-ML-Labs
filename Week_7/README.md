@@ -390,7 +390,9 @@ accuracy, auc = churn4.evaluate_model()
 
 churn4.save_model('churn4_model.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_OOP_Approach_Decision_Tree_Classifier.png)
+
 ---
 
 ### Decision Tree Classifier – Procedural Approach  
@@ -444,7 +446,9 @@ model = train_model(train_X5, train_y5)
 accuracy, auc = evaluate_model(model, val_X5, val_y5)
 save_model(model, 'churn5_model.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_Procedural_Approach_Decision_Tree_Classifier.png)
+
 ---
 
 ### Random Forest Classifier – OOP Approach  
@@ -511,7 +515,8 @@ accuracy, auc = churn6.evaluate_model()
 #### Save the model
 churn6.save_model('churn6_model.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_OOP_Approach_Random_Forest_Classifier.png)
 ---
 
 ### Random Forest Classifier – Procedural Approach  
@@ -564,7 +569,9 @@ model = train_model(train_X7, train_y7)
 accuracy, auc = evaluate_model(model, val_X7, val_y7)
 save_model(model, 'churn7_model.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_Procedural_Approach_Random_Forest_Classifier.png)
+
 ---
 
 ### Support Vector Machine (SVM) – OOP Approach  
@@ -629,7 +636,9 @@ accuracy, auc = churn8.evaluate_model()
 churn8.save_model('churn6_model.pkl')
 
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_OOP_Approach_SVM.png)
+
 ---
 
 ## GRADIENT BOOSTING ALGORITHMS 
@@ -718,7 +727,8 @@ accuracy, auc = churn9.evaluate_model()
 # Save the model
 churn9.save_model('churn9_model.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_OOP_Approach_XGBoost.png)
 ---
 ### Procedural Approach for Xgboost with Automated Hyperparameter Tuning via GridSearchCV
 ```Python
@@ -781,7 +791,8 @@ model_xgb = train_model_xgb(train_X10, train_y10)
 accuracy_xgb, auc_xgb = evaluate_model(model_xgb, val_X10, val_y10)
 save_model(model_xgb, 'best_xgb_model.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_Procedural_Approach_XGBoost_GridSearchCV.png)
 ---
 ## LightGBM Implementation
 
@@ -848,7 +859,8 @@ accuracy, auc = churn11.evaluate_model()
 #### Save the model
 churn11.save_model('churn11_model.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_OOP_Approach_LightGBM_Implementation.png)
 ---
 ### Procedural Approach for LightGBM with Automated Hyperparameter Tuning via GridSearchCV
 ```Python
@@ -904,11 +916,68 @@ model_lgb = train_model_lgb(train_X14, train_y14)
 accuracy_lgb, auc_lgb = evaluate_model(model_lgb, val_X14, val_y14)
 save_model(model_lgb, 'best_lgb_model14.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_Procedural_Approach_LightGBM_GridSearchCV.png)
 ---
 ### Procedural Approach for LightGBM with Automated Hyperparameter Tuning via RandomizedSearchCV
 ```Python
+def load_data(file_path):
+    return pd.read_excel(file_path)
 
+def preprocess_data(data):
+    selected_features = [
+        'CreditScore', 'Geography', 'Gender', 'Age',
+        'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard',
+        'IsActiveMember', 'EstimatedSalary'
+    ]
+    X15 = data[selected_features]
+    y15 = data[['Exited']]
+
+    X15 = pd.get_dummies(X15, columns=["Geography", "Gender"])
+
+    scaler = StandardScaler()
+    X15 = scaler.fit_transform(X15)
+
+    return X15, y15
+
+def split_data(X15, y15):
+    return train_test_split(X15, y15, random_state=0, train_size=0.8)
+
+def train_model_lgb(train_X15, train_y15):
+    model = lgb.LGBMClassifier(random_state=0)
+    param_dist = {
+                'n_estimators': [100, 200],
+                'learning_rate': [0.01, 0.1],
+                'num_leaves': [31, 50],
+            }
+    random_search = RandomizedSearchCV(model, param_distributions=param_dist, scoring='roc_auc', cv=3, n_iter=50, random_state=0)
+    random_search.fit(train_X15, train_y15.values.ravel())
+    return random_search.best_estimator_
+
+def evaluate_model(model, val_X15, val_y15):
+    val_prediction = model.predict(val_X15)
+    accuracy = accuracy_score(val_y15, val_prediction)
+    print(f'Model accuracy: {accuracy}')
+    y15_pred_proba = model.predict_proba(val_X15)[:, 1]
+    auc = roc_auc_score(val_y15, y15_pred_proba)
+    print(f'Model auc score: {auc}')
+    return accuracy, auc
+
+def save_model(model, model_path):
+    joblib.dump(model, model_path)
+
+#### Call
+file_path = "C:/Users\hp\Downloads\DS and ML\Week 7\churn.xlsx"
+data15 = load_data(file_path)
+X15, y15 = preprocess_data(data15)
+train_X15, val_X15, train_y15, val_y15 = split_data(X15, y15)
+model_lgb = train_model_lgb(train_X15, train_y15)
+accuracy_lgb, auc_lgb = evaluate_model(model_lgb, val_X15, val_y15)
+save_model(model_lgb, 'best_lgb15_model.pkl')
+```
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_Procedural_Approach_LightGBM_RandomizedSearchCV.png)
+---
 
 ## Integration of both algorithms
 ### OOP Approach using XGBoost and LightGBM with Automated Hyperparameter Tuning via GridSearchCV
@@ -1008,7 +1077,8 @@ churn_lgb.train_model()
 accuracy_lgb, auc_lgb = churn_lgb.evaluate_model()
 churn_lgb.save_model('churn_lgb_model.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_OOP_Approach_XGBoost_and_LightGBM_GridSearchCV.png)
 ---
 ### OOP Approach using XGBoost and LightGBM with Automated Hyperparameter Tuning via RandomizedSearchCV
 ```Python
@@ -1108,7 +1178,8 @@ churn_lgb13.train_model()
 accuracy_lgb13, auc_lgb = churn_lgb13.evaluate_model()
 churn_lgb13.save_model('churn_lgb13_model.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_OOP_Approach_XGBoost_and_LightGBM_RandomizedSearchCV.png)
 
 ---
 

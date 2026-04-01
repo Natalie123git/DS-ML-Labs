@@ -88,7 +88,8 @@ churn_data.info()
 isnull = churn_data.isnull().sum()
 isnull
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_Load%20and%20Inspect%20Data.png)
 ---
 
 ### Preprocess the data by Selecting Important Features  
@@ -113,7 +114,8 @@ X['Geography'] = label_encode.fit_transform(X['Geography'])
 X['Gender'] = label_encode.fit_transform(X['Gender'])
 X['Gender']
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_Encode_Categorical_Variables%20.png)
 ---
 
 ### Scale Numerical Features  
@@ -123,7 +125,8 @@ scaler = MinMaxScaler()
 X[['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'EstimatedSalary']] = scaler.fit_transform(X[['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'EstimatedSalary']])
 X['Age'].unique()
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_Scale_Numerical_Features.png)
 ---
 
 ### Split Dataset  
@@ -160,7 +163,8 @@ print(classification_report(val_y, val_prediction))
 auc_churn = roc_auc_score(val_y, y_pred_proba)
 print(auc_churn)
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_Evaluate_Model.png)
 ---
 
 ### Save Model  
@@ -171,7 +175,7 @@ joblib.dump(kneighbor_model, 'churn_model.pkl')
 
 ---
 
-### Object‑Oriented Programming (OOP) Approach  
+### Object‑Oriented Programming (OOP) Approach using KNeighborsClassifier
 We implement a reusable class for churn prediction, encapsulating data loading, preprocessing, training, evaluation, and saving.  
 ```python
 class ChurnPrediction:
@@ -198,10 +202,12 @@ class ChurnPrediction:
         self.X2 = self.data[selected_features]
         self.y2 = self.data[['Exited']]
 
+        # Encoding categorical variables
         le = LabelEncoder()
         self.X2['Geography'] = le.fit_transform(self.X2['Geography'])
         self.X2['Gender'] = le.fit_transform(self.X2['Gender'])
 
+        # Scaling numerical variables
         scaler = MinMaxScaler()
         self.X2[['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'EstimatedSalary']] = scaler.fit_transform(self.X2[['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'EstimatedSalary']])
 
@@ -230,8 +236,6 @@ class ChurnPrediction:
         self.model = joblib.load(model_path)
 ```
 
----
-
 ### Call OOP Class  
 We instantiate the class, run the workflow, and save the model.  
 ```python
@@ -244,10 +248,10 @@ accuracy = churn_data2.evaluate_model()
 
 churn_data2.save_model('churn1_model.pkl')
 ```
-
+.
 ---
 
-### Procedural Approach  
+### Procedural Approach using KNeighborsClassifier 
 We implement the same workflow using functions instead of classes.  
 ```python
 def load_data(file_path):
@@ -263,10 +267,12 @@ def preprocess_data(data):
     X3 = data[selected_features]
     y3 = data[['Exited']]
 
+    # Label encoding
     le = LabelEncoder()
     X3['Geography'] = le.fit_transform(X3['Geography'])
     X3['Gender'] = le.fit_transform(X3['Gender'])
 
+    # Scaling
     scaler = MinMaxScaler()
     X3[['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'EstimatedSalary']] = scaler.fit_transform(X3[['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'EstimatedSalary']])
 
@@ -280,12 +286,39 @@ def split_data(X3, y3):
 
 def train_model(train_X3, train_y3):
     model = KNeighborsClassifier(n_neighbors=5)
+    model.fit(train_X3, train_y3)
+    return model
 
-Here’s the **Commands Executed** section for the additional Week 7 lab work you shared. Each block of code is introduced with a short explanation, then the exact code (unchanged):
+def evaluate_model(model, val_X3, val_y3):
+    val_prediction = model.predict(val_X3)
+    accuracy = accuracy_score(val_y3, val_prediction)
+    print(f'Model accuracy: {accuracy}')
 
+    auc = roc_auc_score(val_y3, val_prediction)
+    print(f'Model auc score: {auc}')
+    return accuracy, auc
+
+def save_model(model, model_path):
+    joblib.dump(model, model_path)
+
+def load_model(model_path):
+    model = joblib.load(model_path)
+    return model
+```
+### Call the Procedural Approach
+We call the approach and save the model.  
+```python
+
+file_path = "C:/Users\hp\Downloads\DS and ML\Week 7\churn.xlsx"
+churn_data3 = load_data(file_path)
+X3, y3 = preprocess_data(churn_data3)
+train_X3, val_X3, train_y3, val_y3 = split_data(X3, y3)
+model = train_model(train_X3, train_y3)
+accuracy, auc = evaluate_model(model, val_X3, val_y3)
+save_model(model, 'churn3_model.pkl')
+```
+.
 ---
-
-## 💻 Commands Executed
 
 ### Decision Tree Classifier – OOP Approach  
 We implement a class that loads, preprocesses, splits, trains, evaluates, and saves a Decision Tree model.  

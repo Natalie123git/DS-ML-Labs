@@ -77,7 +77,8 @@ from sklearn.tree import DecisionTreeClassifier
 import warnings  #ignore warnings
 warnings.filterwarnings('ignore')
 ```
-**---**
+then
+---
 
 ### Raw Format – Load and Inspect Data  
 We load the churn dataset from Excel, preview the first rows, and check dataset info and missing values.  
@@ -105,7 +106,7 @@ important_features = [
 X = churn_data[important_features]
 y = churn_data[['Exited']]
 ```
-
+then
 ---
 
 ### Encode Categorical Variables  
@@ -138,7 +139,7 @@ train_X, val_X, train_y, val_y = train_test_split(
     X, y, random_state=0, train_size=0.8
 ) #not fixed, random state shuffles the data, best random state to use is state 42, it gives the best shuffle
 ```
-
+then
 ---
 
 ### Train K‑Nearest Neighbors Model  
@@ -147,7 +148,7 @@ We train a KNN classifier with specified parameters.
 kneighbor_model = KNeighborsClassifier(n_neighbors=2, metric='euclidean', weights='uniform', algorithm='auto', leaf_size=50, p=2)
 kneighbor_model.fit(train_X, train_y)
 ```
-
+then
 ---
 
 ### Evaluate Model  
@@ -322,6 +323,7 @@ save_model(model, 'churn3_model.pkl')
 ```
 ### Screenshots of Results
 ![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_Procedural_Approach_KN.png)
+
 ---
 
 ### Decision Tree Classifier – OOP Approach  

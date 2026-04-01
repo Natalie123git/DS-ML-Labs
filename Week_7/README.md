@@ -24,7 +24,7 @@ The lab emphasized:
 
 ---
 
-## 📂 Step‑by‑Step Process
+## Step‑by‑Step Process
 - Import libraries and suppress warnings  
 - Load dataset from Excel file  
 - Inspect dataset and check for missing values  

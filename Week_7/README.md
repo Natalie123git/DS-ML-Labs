@@ -1,7 +1,10 @@
 # Machine Learning: Supervised learning
 
 ## Objective
-Different modeling strategies were explored to predict **customer churn** using supervised learning techniques under machine learning. The lab progressed from raw procedural scripts to Object‑Oriented Programming (OOP) classes and procedural functions, highlighting the differences between these approaches.
+To explore different modeling strategies to predict **customer churn** using supervised learning techniques under machine learning. 
+
+## Process
+The lab progressed from raw procedural scripts to Object‑Oriented Programming (OOP) classes and procedural functions, highlighting the differences between these approaches.
 It also focused on building classification models where the target variable (`Exited`) was known, allowing algorithms to learn patterns from labeled data and make predictions on unseen cases.  
 
 - **OOP Approach**: Encapsulates the workflow into reusable classes with methods for loading data, preprocessing, training, evaluating, and saving models. This promotes modularity, scalability, and cleaner organization.  

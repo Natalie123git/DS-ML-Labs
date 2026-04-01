@@ -77,8 +77,7 @@ from sklearn.tree import DecisionTreeClassifier
 import warnings  #ignore warnings
 warnings.filterwarnings('ignore')
 ```
-
----
+**---**
 
 ### Raw Format – Load and Inspect Data  
 We load the churn dataset from Excel, preview the first rows, and check dataset info and missing values.  

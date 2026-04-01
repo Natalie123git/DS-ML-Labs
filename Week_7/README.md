@@ -248,7 +248,8 @@ accuracy = churn_data2.evaluate_model()
 
 churn_data2.save_model('churn1_model.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_OOP_Approach_KN.png)
 ---
 
 ### Procedural Approach using KNeighborsClassifier 
@@ -317,7 +318,8 @@ model = train_model(train_X3, train_y3)
 accuracy, auc = evaluate_model(model, val_X3, val_y3)
 save_model(model, 'churn3_model.pkl')
 ```
-.
+### Screenshots of Results
+![Result1]( https://github.com/Natalie123git/DS-ML-Labs/blob/main/Week_7/Week_7_Results_Procedural_Approach_KN.png)
 ---
 
 ### Decision Tree Classifier – OOP Approach  

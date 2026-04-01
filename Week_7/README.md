@@ -16,7 +16,7 @@ A wide range of supervised learning algorithms were implemented and compared, in
 
 Integration of algorithms was also demonstrated, for example through the **OOP approach using XGBoost and LightGBM combined with automated hyperparameter tuning via GridSearchCV and RandomizedSearchCV**, which optimized model performance by systematically searching for the best parameter combinations.  
 
-The lab emphasized:
+Points of emphasis:
 - Robust data preprocessing (feature selection, encoding, scaling).
 - Comparative model training and evaluation using accuracy, confusion matrix, classification report, and ROC‑AUC score.
 - Reusability and modularity through OOP versus procedural workflows.
@@ -55,7 +55,7 @@ The lab emphasized:
 
 ---
 
-## 💻 Commands Executed
+## Commands Executed
 
 ### Import Libraries  
 We start by importing all necessary libraries for data manipulation, visualization, preprocessing, model training, and evaluation.  
@@ -88,10 +88,10 @@ churn_data.info()
 isnull = churn_data.isnull().sum()
 isnull
 ```
-
+.
 ---
 
-### Select Important Features  
+### Preprocess the data by Selecting Important Features  
 We select the most relevant features for predicting churn.  
 ```python
 important_features = [
@@ -113,7 +113,7 @@ X['Geography'] = label_encode.fit_transform(X['Geography'])
 X['Gender'] = label_encode.fit_transform(X['Gender'])
 X['Gender']
 ```
-
+.
 ---
 
 ### Scale Numerical Features  
@@ -123,7 +123,7 @@ scaler = MinMaxScaler()
 X[['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'EstimatedSalary']] = scaler.fit_transform(X[['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'EstimatedSalary']])
 X['Age'].unique()
 ```
-
+.
 ---
 
 ### Split Dataset  
@@ -160,7 +160,7 @@ print(classification_report(val_y, val_prediction))
 auc_churn = roc_auc_score(val_y, y_pred_proba)
 print(auc_churn)
 ```
-
+.
 ---
 
 ### Save Model  
